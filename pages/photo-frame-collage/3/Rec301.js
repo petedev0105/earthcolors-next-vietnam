@@ -152,7 +152,7 @@ function Rec301() {
                   className="1"
                   onClick={handleImageClick}
                   // style={{ zIndex: 3 }}
-                  style={{ position: "relative" }}
+                  style={{zIndex:2, position: "relative" }}
                 />
                 {/* {firstImgSrc && (
                   <img

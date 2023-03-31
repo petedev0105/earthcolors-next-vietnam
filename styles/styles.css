@@ -544,7 +544,7 @@ body {
   background-position: center;
   position: absolute;
   top: 1px;
-  left: 1px;
+  left: 0.8px;
   width: 99%;
   height: 99%;
 }
@@ -561,8 +561,8 @@ body {
 }
 
 .comboImg {
-  top: 1px;
-  left: 1px;
+  top: 0.5px;
+  left: 0.5px;
   position: absolute;
   object-fit: cover;
 }
