@@ -158,16 +158,16 @@ function Hec611() {
               <div
                 className="hexComboImage"
                 id="1"
-                style={{ left: 650
-                  , top: 150
+                style={{ left: 651
+                  , top: 172
                 }}
               >
                 <Hex
                   img={firstImgSrc}
                   onClick={handleImageClick}
                   className="1"
-                  frameSource={`/img/${activeMaterial}/F048.png`}
-                  type={"F048"}
+                  frameSource={`/img/${activeMaterial}/F114.png`}
+                  type={"F114"}
                 />
               </div>
             </Draggable>
@@ -176,16 +176,16 @@ function Hec611() {
               <div
                 className="hexComboImage"
                 id="1"
-                style={{ left: 754
-                  , top: 150
+                style={{ left: 745
+                  , top: 228
                 }}
               >
                <Hex
                   img={secondImgSrc}
                   onClick={handleImageClick}
                   className="2"
-                  frameSource={`/img/${activeMaterial}/F048.png`}
-                  type={"F048"}
+                  frameSource={`/img/${activeMaterial}/F114.png`}
+                  type={"F114"}
                 />
               </div>
             </Draggable>
@@ -194,16 +194,16 @@ function Hec611() {
               <div
                 className="hexComboImage"
                 id="2"
-                style={{ left: 858
-                  , top: 150
+                style={{ left: 836
+                  , top: 172
                 }}
               >
                <Hex
                   img={thirdImgSrc}
                   onClick={handleImageClick}
                   className="3"
-                  frameSource={`/img/${activeMaterial}/F048.png`}
-                  type={"F048"}
+                  frameSource={`/img/${activeMaterial}/F114.png`}
+                  type={"F114"}
                 />
               </div>
             </Draggable>
@@ -212,16 +212,16 @@ function Hec611() {
               <div
                 className="hexComboImage"
                 id="3"
-                style={{ left: 705
-                  , top: 245
+                style={{ left: 651
+                  , top: 281
                 }}
               >
               <Hex
                   img={fourthImgSrc}
                   onClick={handleImageClick}
                   className="4"
-                  frameSource={`/img/${activeMaterial}/F048.png`}
-                  type={"F048"}
+                  frameSource={`/img/${activeMaterial}/F114.png`}
+                  type={"F114"}
                 />
               </div>
             </Draggable>
@@ -230,16 +230,16 @@ function Hec611() {
               <div
                 className="hexComboImage"
                 id="4"
-                style={{ left: 807
-                  , top: 245
+                style={{ left: 836
+                  , top: 281
                 }}
               >
               <Hex
                   img={fifthImgSrc}
                   onClick={handleImageClick}
                   className="5"
-                  frameSource={`/img/${activeMaterial}/F048.png`}
-                  type={"F048"}
+                  frameSource={`/img/${activeMaterial}/F114.png`}
+                  type={"F114"}
                 />
               </div>
             </Draggable>
@@ -248,16 +248,16 @@ function Hec611() {
               <div
                 className="hexComboImage"
                 id="5"
-                style={{ left: 755
-                  , top: 337
+                style={{ left: 746
+                  , top: 334
                 }}
               >
                 <Hex
                   img={sixthImgSrc}
                   onClick={handleImageClick}
                   className="6"
-                  frameSource={`/img/${activeMaterial}/F048.png`}
-                  type={"F048"}
+                  frameSource={`/img/${activeMaterial}/F114.png`}
+                  type={"F114"}
                 />
               </div>
             </Draggable>
