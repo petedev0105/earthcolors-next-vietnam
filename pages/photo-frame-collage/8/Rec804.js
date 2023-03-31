@@ -234,6 +234,7 @@ function Rec804() {
                <div
                   style={{
                     backgroundImage: `url(${fourthImgSrc})`,
+                    width: "140px"
                   }}
                 ></div>
               </div>
