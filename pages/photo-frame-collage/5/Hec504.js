@@ -153,9 +153,9 @@ function Hec504() {
                 style={{ left: 653, top: 200 }}
               >
                <Hex
-                  img={fourthImgSrc}
+                  img={firstImgSrc}
                   onClick={handleImageClick}
-                  className="4"
+                  className="1"
                   frameSource={`/img/${activeMaterial}/F048.png`}
                   type={"F048"}
                 />
