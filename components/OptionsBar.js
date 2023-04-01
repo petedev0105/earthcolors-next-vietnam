@@ -470,15 +470,14 @@ function OptionsBar({
             >
               <i className="bg-white p-1 rounded-md">
                 {/* {salesText} */}
-                For more creativity: Click and Drag any frame to your desired
-                location. Back to default: refresh with F5.
+                Kéo và thả bất cứ khung hình nào bạn muốn để thỏa sức sáng tạo
               </i>
             </span>
           </div>
         </div>
         <div className="flex space-x-5 p-2 bg-white rounded-md shadow-md border justify-center items-center">
           <div className="">
-            <span className="font-bold">Background color</span>
+            <span className="font-bold">Màu tường</span>
           </div>
           <input
             type="color"
@@ -496,7 +495,7 @@ function OptionsBar({
               className="px-3 py-2 rounded-md border shadow-md bg-slate-300 font-bold"
               onClick={() => handleWallpaper()}
             >
-              Upload wallpaper
+              Đăng tải giấy dán tường
             </button>
           </div>
           <div className="">
@@ -504,7 +503,7 @@ function OptionsBar({
               className="px-3 py-2 rounded-md border shadow-md bg-slate-300 font-bold"
               onClick={() => resetWallpaper()}
             >
-              Random wallpaper{" "}
+              Giấy dán tường ngẫu nhiên{" "}
             </button>
           </div>
 
@@ -514,7 +513,7 @@ function OptionsBar({
               style={{ backgroundColor: "#BF5A1F" }}
               onChange={(e) => handleCollageLink(e.target.value)}
             >
-              <option>Collage Designs</option>
+              <option>Các mẫu thiết kế</option>
 
               <optgroup label="tree">
                 {treecollages.map((tree) => {
@@ -720,23 +719,23 @@ function OptionsBar({
               // onClick={() => handleWallpaper()}
               onChange={(e) => handleMaterialChange(e.target.value)}
             >
-              <option>Frame material</option>
-              <optgroup label="Natural Wood">
+              <option>Chất liêu khung</option>
+              <optgroup label="Gỗ tự nhiên">
                 {materials.slice(0, 1).map((material) => {
                   return <option key={material}>{material}</option>;
                 })}
               </optgroup>
-              <optgroup label="Bright Wood">
+              <optgroup label="Gỗ sáng">
                 {materials.slice(1, 9).map((material) => {
                   return <option key={material}>{material}</option>;
                 })}
               </optgroup>
-              <optgroup label="Dark Wood">
+              <optgroup label="Gỗ tối">
                 {materials.slice(9, 23).map((material) => {
                   return <option key={material}>{material}</option>;
                 })}
               </optgroup>
-              <optgroup label="Rustic Metal">
+              <optgroup label="Kim loại gỉ">
                 {materials.slice(23, materials.length).map((material) => {
                   return <option key={material}>{material}</option>;
                 })}
@@ -749,7 +748,7 @@ function OptionsBar({
               className="px-3 py-2 rounded-md border shadow-md  text-white font-bold w-48"
               style={{ backgroundColor: "#BF5A1F" }}
             >
-              <option>Suppliers</option>
+              <option>Nhà phân phối</option>
               {countries.map((country) => {
                 return (
                   <optgroup label={country} key={country}>
@@ -780,7 +779,7 @@ function OptionsBar({
                 style={{ backgroundColor: "#BF5A1F" }}
                 className="px-3 py-2 rounded-md border-orange-700 border-2 shadow-md font-bold text-white"
               >
-                2D Sample
+                Mẫu 2D
               </button>
             </Link>
           </div>
@@ -793,7 +792,7 @@ function OptionsBar({
                 style={{ backgroundColor: "#BF5A1F" }}
                 className="px-3 py-2 rounded-md border-orange-700 border-2 shadow-md font-bold text-white"
               >
-                3D Sample
+                Mẫu 3D
               </button>
             </Link>
           </div>
@@ -804,7 +803,7 @@ function OptionsBar({
               style={{ backgroundColor: "#BF5A1F" }}
               onClick={() => handleExportDesign()}
             >
-              Export design
+              Xuất hình
             </button>
           </div>
         </div>
@@ -812,7 +811,7 @@ function OptionsBar({
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Upload Wallpaper</Modal.Title>
+          <Modal.Title>Đăng tải giấy dán tường</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="space-y-3">
@@ -822,7 +821,7 @@ function OptionsBar({
                 onClick={() => handleUploadDevice()}
                 style={{ borderColor: "#BF5A1F", color: "#BF5A1F" }}
               >
-                Upload from device
+                Đăng tải từ thiết bị
               </button>
             </div>
           </div>

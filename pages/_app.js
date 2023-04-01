@@ -7,9 +7,9 @@ import { useEffect, useState } from "react";
 
 function MyApp({ Component, pageProps }) {
   const salesArray = [
-    "FREE &$100 WOODEN LAMP FOR ORDER FROM $199",
-    "BUY ONE GET ONE FREE",
-    "50% OFF TODAY",
+    "MIỄN PHÍ &$100 ĐÈN GỖ CHO ĐƠN HÀNG TỪ $199",
+    "MUA 1 TẶNG 1",
+    "GIẢM 50% HÔM NAY",
   ];
 
   const [salesText, setSalesText] = useState("");
