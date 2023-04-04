@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
       </div>
 
       <div className="absolute left-10 top-10 z-10">
-        <Link href="https://earthcolors.net/collage-art-frames/">
+        <Link href="https://earthcolorsvn.com/collage-art-frames/">
           <button
             className="px-5 py-2 rounded-md text-white font-bold"
             style={{ backgroundColor: "#BF5A1F" }}

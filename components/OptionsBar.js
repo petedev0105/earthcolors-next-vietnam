@@ -719,7 +719,7 @@ function OptionsBar({
               // onClick={() => handleWallpaper()}
               onChange={(e) => handleMaterialChange(e.target.value)}
             >
-              <option>Chất liêu khung</option>
+              <option>Chất liệu khung</option>
               <optgroup label="Gỗ tự nhiên">
                 {materials.slice(0, 1).map((material) => {
                   return <option key={material}>{material}</option>;
