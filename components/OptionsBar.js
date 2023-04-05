@@ -520,7 +520,7 @@ function OptionsBar({
                   return (
                     <option
                       key="tree"
-                      value={`https://frames.earthcolors.net/photo-frame-collage/tree/${tree}`}
+                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/tree/${tree}`}
                     >
                       {tree}
                     </option>
@@ -533,7 +533,7 @@ function OptionsBar({
                   return (
                     <option
                       key="Rec3"
-                      value={`https://frames.earthcolors.net/photo-frame-collage/3/${rec}`}
+                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/3/${rec}`}
                     >
                       {rec}
                     </option>
@@ -546,7 +546,7 @@ function OptionsBar({
                   return (
                     <option
                       key="Rec4"
-                      value={`https://frames.earthcolors.net/photo-frame-collage/4/${rec}`}
+                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/4/${rec}`}
                     >
                       {rec}
                     </option>
@@ -559,7 +559,7 @@ function OptionsBar({
                   return (
                     <option
                       key="Rec5"
-                      value={`https://frames.earthcolors.net/photo-frame-collage/5/${rec}`}
+                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/5/${rec}`}
                     >
                       {rec}
                     </option>
@@ -572,7 +572,7 @@ function OptionsBar({
                   return (
                     <option
                       key="Rec6"
-                      value={`https://frames.earthcolors.net/photo-frame-collage/6/${rec}`}
+                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/6/${rec}`}
                     >
                       {rec}
                     </option>
@@ -585,7 +585,7 @@ function OptionsBar({
                   return (
                     <option
                       key="Rec7"
-                      value={`https://frames.earthcolors.net/photo-frame-collage/7/${rec}`}
+                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/7/${rec}`}
                     >
                       {rec}
                     </option>
@@ -598,7 +598,7 @@ function OptionsBar({
                   return (
                     <option
                       key="Rec8"
-                      value={`https://frames.earthcolors.net/photo-frame-collage/8/${rec}`}
+                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/8/${rec}`}
                     >
                       {rec}
                     </option>
@@ -611,7 +611,7 @@ function OptionsBar({
                   return (
                     <option
                       key="stair"
-                      value={`https://frames.earthcolors.net/photo-frame-collage/stair/${stair}`}
+                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/stair/${stair}`}
                     >
                       {stair}
                     </option>
@@ -624,7 +624,7 @@ function OptionsBar({
                   return (
                     <option
                       key="hec"
-                      value={`https://frames.earthcolors.net/photo-frame-collage/3/${hec}`}
+                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/3/${hec}`}
                     >
                       {hec}
                     </option>
@@ -637,7 +637,7 @@ function OptionsBar({
                   return (
                     <option
                       key="hec"
-                      value={`https://frames.earthcolors.net/photo-frame-collage/4/${hec}`}
+                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/4/${hec}`}
                     >
                       {hec}
                     </option>
@@ -650,7 +650,7 @@ function OptionsBar({
                   return (
                     <option
                       key="hec"
-                      value={`https://frames.earthcolors.net/photo-frame-collage/5/${hec}`}
+                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/5/${hec}`}
                     >
                       {hec}
                     </option>
@@ -663,7 +663,7 @@ function OptionsBar({
                   return (
                     <option
                       key="hec"
-                      value={`https://frames.earthcolors.net/photo-frame-collage/6/${hec}`}
+                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/6/${hec}`}
                     >
                       {hec}
                     </option>
@@ -676,7 +676,7 @@ function OptionsBar({
                   return (
                     <option
                       key="hec"
-                      value={`https://frames.earthcolors.net/photo-frame-collage/7/${hec}`}
+                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/7/${hec}`}
                     >
                       {hec}
                     </option>
@@ -689,7 +689,7 @@ function OptionsBar({
                   return (
                     <option
                       key="hec"
-                      value={`https://frames.earthcolors.net/photo-frame-collage/8/${hec}`}
+                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/8/${hec}`}
                     >
                       {hec}
                     </option>
@@ -702,7 +702,7 @@ function OptionsBar({
                   return (
                     <option
                       key="hec"
-                      value={`https://frames.earthcolors.net/photo-frame-collage/9/${hec}`}
+                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/9/${hec}`}
                     >
                       {hec}
                     </option>
@@ -772,7 +772,7 @@ function OptionsBar({
         </div> */}
           <div className="">
             <Link
-              href="https://earthcolors.net/product-images/?k=&c=collage-wallart"
+              href="https://earthcolorsvn.com/product-images/?k=&c=collage-wallart"
               target="_blank"
             >
               <button
