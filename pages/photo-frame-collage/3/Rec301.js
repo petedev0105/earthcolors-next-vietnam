@@ -11,6 +11,7 @@ function Rec301() {
   const f = useRef(null);
   const w = useRef(null);
   const exportRef = useRef();
+  const collageName = "Rec301"
 
   const [show, setShow] = useState(false);
 
@@ -245,6 +246,7 @@ function Rec301() {
         handleUploadDevice={handleUploadDevice}
         exportRef={exportRef}
         uploadRef={w}
+        collageName={collageName}
       />
     </div>
   );

@@ -785,7 +785,7 @@ function OptionsBar({
           </div>
           <div className="">
             <Link
-              href="https://michiovisualization.info/00-0012-03-02-00/"
+              href={`https://michiovisualization.co/?s=${collageName}`}
               target="_blank"
             >
               <button
