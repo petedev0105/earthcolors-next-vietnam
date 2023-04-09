@@ -9,7 +9,7 @@ function Rec303() {
   const f = useRef(null);
   const w = useRef(null);
   const exportRef = useRef();
-  const collageName = "Rec301"
+  const collageName = "Rec303"
 
   const [show, setShow] = useState(false);
 
