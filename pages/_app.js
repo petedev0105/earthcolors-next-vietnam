@@ -27,15 +27,6 @@ function MyApp({ Component, pageProps }) {
   }, []);
   return (
     <MaterialProvider>
-      <div className="absolute flex justify-center w-full top-3">
-        <div
-          style={{ zIndex: 10 }}
-          className="bg-white px-5 py-2 rounded-md font-bold"
-        >
-          {salesText}
-        </div>
-      </div>
-
       <div className="absolute left-10 top-10 z-10">
         <Link href="https://earthcolorsvn.com/collage-art-frames/">
           <button
@@ -47,6 +38,9 @@ function MyApp({ Component, pageProps }) {
         </Link>
       </div>
       <Component {...pageProps} />
+      <div className="lg:hidden text-8xl text-center pt-10 w-full">
+          <span>BETTER ON PC (NOT MOBILE SUPPORTED YET)</span>
+        </div>
     </MaterialProvider>
   );
 }

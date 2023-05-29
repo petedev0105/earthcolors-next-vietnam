@@ -807,6 +807,8 @@ function OptionsBar({
             </button>
           </div>
         </div>
+
+        
       </div>
 
       <Modal show={show} onHide={handleClose}>
