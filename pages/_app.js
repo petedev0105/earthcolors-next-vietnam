@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps }) {
       </div>
       <Component {...pageProps} />
       <div className="lg:hidden text-8xl text-center pt-10 w-full">
-          <span>WEB HOẠT ĐỘNG TỐT HƠN KHI DÙNG TRÊN MÁY TÍNH</span>
+          <span>CHỨC NĂNG NÀY HOẠT ĐỘNG TỐT HƠN KHI DÙNG TRÊN MÁY TÍNH</span>
         </div>
     </MaterialProvider>
   );

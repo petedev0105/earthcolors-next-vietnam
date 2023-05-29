@@ -813,7 +813,7 @@ function OptionsBar({
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Đăng tải giấy dán tường</Modal.Title>
+          <Modal.Title>Thay giấy dán tường</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="space-y-3">
