@@ -463,17 +463,6 @@ function OptionsBar({
       <div className="text-sm absolute bottom-5 space-y-2 z-20">
         
         <div className=" justify-center items-center">
-          <div className=" rounded-md w-inherit flex justify-center">
-            <span
-              // style={{ color: "#BF5A1F" }}
-              className=" px-3 py-2 rounded-md font-bold"
-            >
-              <i className="bg-white p-1 rounded-md">
-                {/* {salesText} */}
-                Kéo và thả bất cứ khung hình nào bạn muốn để thỏa sức sáng tạo
-              </i>
-            </span>
-          </div>
         </div>
         <div className="flex space-x-5 p-2 bg-white rounded-md shadow-md border justify-center items-center">
           <div className="">
