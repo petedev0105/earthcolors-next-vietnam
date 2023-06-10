@@ -167,7 +167,7 @@ function Rec606() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0025 */}
+            {/* F0025 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="comboImage"
@@ -187,7 +187,7 @@ function Rec606() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F001 */}
+            {/* F001 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="comboImage"
@@ -207,7 +207,7 @@ function Rec606() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F001 */}
+            {/* F001 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="comboImage"
@@ -227,7 +227,7 @@ function Rec606() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0025 */}
+            {/* F0025 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="comboImage"
@@ -247,7 +247,7 @@ function Rec606() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0020 */}
+            {/* F0020 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="comboImage"

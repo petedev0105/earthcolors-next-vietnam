@@ -177,7 +177,7 @@ function Rec802() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0037 */}
+            {/* F0037 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="comboImage"
@@ -197,7 +197,7 @@ function Rec802() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0037 */}
+            {/* F0037 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="comboImage"
@@ -217,7 +217,7 @@ function Rec802() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0031 */}
+            {/* F0031 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="comboImage"
@@ -237,7 +237,7 @@ function Rec802() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0031 */}
+            {/* F0031 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="comboImage"
@@ -257,7 +257,7 @@ function Rec802() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0037 */}
+            {/* F0037 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="comboImage"
@@ -277,7 +277,7 @@ function Rec802() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0037 */}
+            {/* F0037 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="comboImage"
@@ -297,7 +297,7 @@ function Rec802() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0031 */}
+            {/* F0031 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="comboImage"

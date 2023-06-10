@@ -153,7 +153,7 @@ function Hec306() {
                 />
               </div>
             </Draggable>
-            ;{/* F114 */}
+            {/* F114 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="hexComboImage"
@@ -171,7 +171,7 @@ function Hec306() {
                 />
               </div>
             </Draggable>
-            ;{/* F114 */}
+            {/* F114 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="hexComboImage"

@@ -154,7 +154,7 @@ function Rec301() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0035 */}
+            {/* F0035 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="comboImage"
@@ -174,7 +174,7 @@ function Rec301() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0035 */}
+            {/* F0035 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="comboImage"

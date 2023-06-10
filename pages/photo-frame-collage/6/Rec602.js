@@ -167,7 +167,7 @@ function Rec602() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0020 */}
+            {/* F0020 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div className="comboImage" id="2" style={{ left: 702, top: 158 }}>
               <img
@@ -183,7 +183,7 @@ function Rec602() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0010 */}
+            {/* F0010 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div className="comboImage" id="3" style={{ left: 807, top: 112 }}>
               <img
@@ -199,7 +199,7 @@ function Rec602() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0010 */}
+            {/* F0010 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div className="comboImage" id="4" style={{ left: 612, top: 306 }}>
               <img
@@ -215,7 +215,7 @@ function Rec602() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0020 */}
+            {/* F0020 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div className="comboImage" id="5" style={{ left: 807, top: 306 }}>
               <img
@@ -231,7 +231,7 @@ function Rec602() {
                 ></div>
               </div>
             </Draggable>
-            ;{/* F0020 */}
+            {/* F0020 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div className="comboImage" id="6" style={{ left: 913, top: 306 }}>
               <img
