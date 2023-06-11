@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button";
 import { MaterialContext } from "../utils/materialContext";
 import Link from "next/link";
 import exportAsImage from "../utils/ExportAsImage";
-
 function OptionsBar({
   color,
   setColor,
@@ -14,6 +13,7 @@ function OptionsBar({
   uploadRef,
   collageName,
 }) {
+  const [collageModal, setCollageModal] = useState(false);
   const { activeMaterial, setActiveMaterial, materials, setWallPaperIndex } =
     useContext(MaterialContext);
 
@@ -50,6 +50,14 @@ function OptionsBar({
 
   //   setSalesText(salesArray[rand]);
   // }, []);
+
+  function handleCollageModal() {
+    setCollageModal(true);
+  }
+
+  function handleCloseCollageModal() {
+    setCollageModal(false);
+  }
 
   const wallpapers = [
     "/img/web/Background-1.jpg",
@@ -424,7 +432,7 @@ function OptionsBar({
     "Hec506",
     "Hec507",
     "Hec508",
-    "Hec509"
+    "Hec509",
   ];
   const hec6collages = [
     "Hec601",
@@ -437,7 +445,7 @@ function OptionsBar({
     "Hec608",
     "Hec609",
     "Hec610",
-    "Hec611"
+    "Hec611",
   ];
   const hec7collages = ["Hec701", "Hec702", "Hec703", "Hec704", "Hec705"];
   const hec8collages = [
@@ -461,9 +469,7 @@ function OptionsBar({
   return (
     <>
       <div className="text-sm absolute bottom-5 space-y-2 z-20">
-        
-        <div className=" justify-center items-center">
-        </div>
+        <div className=" justify-center items-center"></div>
         <div className="flex space-x-5 p-2 bg-white rounded-md shadow-md border justify-center items-center">
           <div className="">
             <span className="font-bold">Màu tường</span>
@@ -496,209 +502,14 @@ function OptionsBar({
             </button>
           </div>
 
-          <div className="">
-            <select
+          <div>
+            <button
               className="px-3 py-2 rounded-md border shadow-md  text-white font-bold w-48"
               style={{ backgroundColor: "#BF5A1F" }}
-              onChange={(e) => handleCollageLink(e.target.value)}
+              onClick={() => handleCollageModal()}
             >
-              <option>Các mẫu thiết kế</option>
-
-              <optgroup label="tree">
-                {treecollages.map((tree) => {
-                  return (
-                    <option
-                      key="tree"
-                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/tree/${tree}`}
-                    >
-                      {tree}
-                    </option>
-                  );
-                })}
-              </optgroup>
-
-              <optgroup label="Rec3">
-                {rec3collages.map((rec) => {
-                  return (
-                    <option
-                      key="Rec3"
-                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/3/${rec}`}
-                    >
-                      {rec}
-                    </option>
-                  );
-                })}
-              </optgroup>
-
-              <optgroup label="Rec4">
-                {rec4collages.map((rec) => {
-                  return (
-                    <option
-                      key="Rec4"
-                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/4/${rec}`}
-                    >
-                      {rec}
-                    </option>
-                  );
-                })}
-              </optgroup>
-
-              <optgroup label="Rec5">
-                {rec5collages.map((rec) => {
-                  return (
-                    <option
-                      key="Rec5"
-                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/5/${rec}`}
-                    >
-                      {rec}
-                    </option>
-                  );
-                })}
-              </optgroup>
-
-              <optgroup label="Rec6">
-                {rec6collages.map((rec) => {
-                  return (
-                    <option
-                      key="Rec6"
-                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/6/${rec}`}
-                    >
-                      {rec}
-                    </option>
-                  );
-                })}
-              </optgroup>
-
-              <optgroup label="Rec7">
-                {rec7collages.map((rec) => {
-                  return (
-                    <option
-                      key="Rec7"
-                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/7/${rec}`}
-                    >
-                      {rec}
-                    </option>
-                  );
-                })}
-              </optgroup>
-
-              <optgroup label="Rec8">
-                {rec8collages.map((rec) => {
-                  return (
-                    <option
-                      key="Rec8"
-                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/8/${rec}`}
-                    >
-                      {rec}
-                    </option>
-                  );
-                })}
-              </optgroup>
-
-              <optgroup label="Stair">
-                {staircollages.map((stair) => {
-                  return (
-                    <option
-                      key="stair"
-                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/stair/${stair}`}
-                    >
-                      {stair}
-                    </option>
-                  );
-                })}
-              </optgroup>
-
-              <optgroup label="Hec3">
-                {hec3collages.map((hec) => {
-                  return (
-                    <option
-                      key="hec"
-                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/3/${hec}`}
-                    >
-                      {hec}
-                    </option>
-                  );
-                })}
-              </optgroup>
-
-              <optgroup label="Hec4">
-                {hec4collages.map((hec) => {
-                  return (
-                    <option
-                      key="hec"
-                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/4/${hec}`}
-                    >
-                      {hec}
-                    </option>
-                  );
-                })}
-              </optgroup>
-
-              <optgroup label="Hec5">
-                {hec5collages.map((hec) => {
-                  return (
-                    <option
-                      key="hec"
-                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/5/${hec}`}
-                    >
-                      {hec}
-                    </option>
-                  );
-                })}
-              </optgroup>
-
-              <optgroup label="Hec6">
-                {hec6collages.map((hec) => {
-                  return (
-                    <option
-                      key="hec"
-                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/6/${hec}`}
-                    >
-                      {hec}
-                    </option>
-                  );
-                })}
-              </optgroup>
-
-              <optgroup label="Hec7">
-                {hec7collages.map((hec) => {
-                  return (
-                    <option
-                      key="hec"
-                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/7/${hec}`}
-                    >
-                      {hec}
-                    </option>
-                  );
-                })}
-              </optgroup>
-
-              <optgroup label="Hec8">
-                {hec8collages.map((hec) => {
-                  return (
-                    <option
-                      key="hec"
-                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/8/${hec}`}
-                    >
-                      {hec}
-                    </option>
-                  );
-                })}
-              </optgroup>
-
-              <optgroup label="Hec9">
-                {hec9collages.map((hec) => {
-                  return (
-                    <option
-                      key="hec"
-                      value={`https://frames.earthcolorsvn.com/photo-frame-collage/9/${hec}`}
-                    >
-                      {hec}
-                    </option>
-                  );
-                })}
-              </optgroup>
-            </select>
+              Các mẫu thiết kế
+            </button>
           </div>
 
           <div className="">
@@ -730,6 +541,16 @@ function OptionsBar({
                 })}
               </optgroup>
             </select>
+          </div>
+
+          <div>
+            <button
+              className="px-4 py-2 rounded-md border shadow-md text-white font-bold"
+              style={{ backgroundColor: "#BF5A1F" }}
+              onClick={() => openFrameMaterialModal()}
+            >
+              Chất liệu khung
+            </button>
           </div>
 
           <div className="">
@@ -796,8 +617,6 @@ function OptionsBar({
             </button>
           </div>
         </div>
-
-        
       </div>
 
       <Modal show={show} onHide={handleClose}>
@@ -814,6 +633,465 @@ function OptionsBar({
               >
                 Đăng tải từ thiết bị
               </button>
+            </div>
+          </div>
+        </Modal.Body>
+      </Modal>
+
+      <Modal show={collageModal} onHide={handleCloseCollageModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Các mẫu thiết kế</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div className="space-y-3">
+            <div className="h-96 overflow-y-scroll">
+              <div>
+                <div>
+                  <span className="font-bold">Tree Collages</span>
+                </div>
+
+                <div className="space-y-3">
+                  {treecollages.map((collage) => {
+                    return (
+                      <Link
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/tree/${collage}`} target="_blank" key={collage}
+                      >
+                        <div
+                          key={collage}
+                          className="flex space-x-5 pb-5 hover:bg-slate-100 cursor-pointer p-3 rounded-md"
+                        >
+                          <div>
+                            <img
+                              src={`/img/icon-collage-jpg/${collage}.jpg`}
+                              height={70}
+                              width={70}
+                            />
+                          </div>
+                          <div>
+                            <span>{collage}</span>
+                          </div>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <span className="font-bold">3-Frame Collages</span>
+                </div>
+
+                <div className="space-y-3">
+                  {rec3collages.map((collage) => {
+                    return (
+                      <Link
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/3/${collage}`} target="_blank" key={collage}
+                      >
+                        <div
+                          key={collage}
+                          className="flex space-x-5 pb-5 hover:bg-slate-100 cursor-pointer p-3 rounded-md"
+                        >
+                          <div>
+                            <img
+                              src={`/img/icon-collage-jpg/${collage}.jpg`}
+                              height={70}
+                              width={70}
+                            />
+                          </div>
+                          <div>
+                            <span>{collage}</span>
+                          </div>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div>
+                {/* <div>
+                  <span className="font-bold">3-Frame Collages</span>
+                </div> */}
+
+                <div className="space-y-3">
+                  {hec3collages.map((collage) => {
+                    return (
+                      <Link
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/3/${collage}`} target="_blank" key={collage}
+                      >
+                        <div
+                          key={collage}
+                          className="flex space-x-5 pb-5 hover:bg-slate-100 cursor-pointer p-3 rounded-md"
+                        >
+                          <div>
+                            <img
+                              src={`/img/icon-collage-jpg/${collage}.jpg`}
+                              height={70}
+                              width={70}
+                            />
+                          </div>
+                          <div>
+                            <span>{collage}</span>
+                          </div>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+              <div>
+                <div>
+                  <span className="font-bold">4-Frame Collages</span>
+                </div>
+
+                <div className="space-y-3">
+                  {rec4collages.map((collage) => {
+                    return (
+                      <Link
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/4/${collage}`} target="_blank" key={collage}
+                      >
+                        <div
+                          key={collage}
+                          className="flex space-x-5 pb-5 hover:bg-slate-100 cursor-pointer p-3 rounded-md"
+                        >
+                          <div>
+                            <img
+                              src={`/img/icon-collage-jpg/${collage}.jpg`}
+                              height={70}
+                              width={70}
+                            />
+                          </div>
+                          <div>
+                            <span>{collage}</span>
+                          </div>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div>
+                {/* <div>
+                  <span className="font-bold">4-Frame Collages</span>
+                </div> */}
+
+                <div className="space-y-3">
+                  {hec4collages.map((collage) => {
+                    return (
+                      <Link
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/4/${collage}`} target="_blank" key={collage}
+                      >
+                        <div
+                          key={collage}
+                          className="flex space-x-5 pb-5 hover:bg-slate-100 cursor-pointer p-3 rounded-md"
+                        >
+                          <div>
+                            <img
+                              src={`/img/icon-collage-jpg/${collage}.jpg`}
+                              height={70}
+                              width={70}
+                            />
+                          </div>
+                          <div>
+                            <span>{collage}</span>
+                          </div>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <span className="font-bold">5-Frame Collages</span>
+                </div>
+
+                <div className="space-y-3">
+                  {rec5collages.map((collage) => {
+                    return (
+                      <Link
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/5/${collage}`} target="_blank" key={collage}
+                      >
+                        <div
+                          key={collage}
+                          className="flex space-x-5 pb-5 hover:bg-slate-100 cursor-pointer p-3 rounded-md"
+                        >
+                          <div>
+                            <img
+                              src={`/img/icon-collage-jpg/${collage}.jpg`}
+                              height={70}
+                              width={70}
+                            />
+                          </div>
+                          <div>
+                            <span>{collage}</span>
+                          </div>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+              <div>
+                {/* <div>
+                  <span className="font-bold">5-Frame Collages</span>
+                </div> */}
+
+                <div className="space-y-3">
+                  {hec5collages.map((collage) => {
+                    return (
+                      <Link
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/5/${collage}`} target="_blank" key={collage}
+                      >
+                        <div
+                          key={collage}
+                          className="flex space-x-5 pb-5 hover:bg-slate-100 cursor-pointer p-3 rounded-md"
+                        >
+                          <div>
+                            <img
+                              src={`/img/icon-collage-jpg/${collage}.jpg`}
+                              height={70}
+                              width={70}
+                            />
+                          </div>
+                          <div>
+                            <span>{collage}</span>
+                          </div>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <span className="font-bold">6-Frame Collages</span>
+                </div>
+
+                <div className="space-y-3">
+                  {rec6collages.map((collage) => {
+                    return (
+                      <Link
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/6/${collage}`} target="_blank" key={collage}
+                      >
+                        <div
+                          key={collage}
+                          className="flex space-x-5 pb-5 hover:bg-slate-100 cursor-pointer p-3 rounded-md"
+                        >
+                          <div>
+                            <img
+                              src={`/img/icon-collage-jpg/${collage}.jpg`}
+                              height={70}
+                              width={70}
+                            />
+                          </div>
+                          <div>
+                            <span>{collage}</span>
+                          </div>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div>
+                {/* <div>
+                  <span className="font-bold">6-Frame Collages</span>
+                </div> */}
+
+                <div className="space-y-3">
+                  {hec6collages.map((collage) => {
+                    return (
+                      <Link
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/6/${collage}`} target="_blank" key={collage}
+                      >
+                        <div
+                          key={collage}
+                          className="flex space-x-5 pb-5 hover:bg-slate-100 cursor-pointer p-3 rounded-md"
+                        >
+                          <div>
+                            <img
+                              src={`/img/icon-collage-jpg/${collage}.jpg`}
+                              height={70}
+                              width={70}
+                            />
+                          </div>
+                          <div>
+                            <span>{collage}</span>
+                          </div>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <span className="font-bold">7-Frame Collages</span>
+                </div>
+
+                <div className="space-y-3">
+                  {rec7collages.map((collage) => {
+                    return (
+                      <Link
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/7/${collage}`} target="_blank" key={collage}
+                      >
+                        <div
+                          key={collage}
+                          className="flex space-x-5 pb-5 hover:bg-slate-100 cursor-pointer p-3 rounded-md"
+                        >
+                          <div>
+                            <img
+                              src={`/img/icon-collage-jpg/${collage}.jpg`}
+                              height={70}
+                              width={70}
+                            />
+                          </div>
+                          <div>
+                            <span>{collage}</span>
+                          </div>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+              <div>
+                {/* <div>
+                  <span className="font-bold">7-Frame Collages</span>
+                </div> */}
+
+                <div className="space-y-3">
+                  {hec7collages.map((collage) => {
+                    return (
+                      <Link
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/7/${collage}`}  key={collage}
+                        target="_blank"
+                      >
+                        <div
+                          key={collage}
+                          className="flex space-x-5 pb-5 hover:bg-slate-100 cursor-pointer p-3 rounded-md"
+                        >
+                          <div>
+                            <img
+                              src={`/img/icon-collage-jpg/${collage}.jpg`}
+                              height={70}
+                              width={70}
+                            />
+                          </div>
+                          <div>
+                            <span>{collage}</span>
+                          </div>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+
+                <div>
+                  <div>
+                    <span className="font-bold">8-Frame Collages</span>
+                  </div>
+
+                  <div className="space-y-3">
+                    {rec8collages.map((collage) => {
+                      return (
+                        <Link
+                          href={`https://frames.earthcolorsvn.com/photo-frame-collage/8/${collage}`} target="_blank" key={collage}
+                        >
+                          <div
+                            key={collage}
+                            className="flex space-x-5 pb-5 hover:bg-slate-100 cursor-pointer p-3 rounded-md"
+                          >
+                            <div>
+                              <img
+                                src={`/img/icon-collage-jpg/${collage}.jpg`}
+                                height={70}
+                                width={70}
+                              />
+                            </div>
+                            <div>
+                              <span>{collage}</span>
+                            </div>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+                <div>
+                  {/* <div>
+                    <span className="font-bold">8-Frame Collages</span>
+                  </div> */}
+
+                  <div className="space-y-3">
+                    {hec8collages.map((collage) => {
+                      return (
+                        <Link
+                          href={`https://frames.earthcolorsvn.com/photo-frame-collage/8/${collage}`} target="_blank" key={collage}
+                        >
+                          <div
+                            key={collage}
+                            className="flex space-x-5 pb-5 hover:bg-slate-100 cursor-pointer p-3 rounded-md"
+                          >
+                            <div>
+                              <img
+                                src={`/img/icon-collage-jpg/${collage}.jpg`}
+                                height={70}
+                                width={70}
+                              />
+                            </div>
+                            <div>
+                              <span>{collage}</span>
+                            </div>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+                
+                <div>
+                  <div>
+                    <span className="font-bold">9-Frame Collages</span>
+                  </div>
+
+                  <div className="space-y-3">
+                    {hec9collages.map((collage) => {
+                      return (
+                        <Link
+                          href={`https://frames.earthcolorsvn.com/photo-frame-collage/9/${collage}`} key={collage}
+                          target="_blank"
+                        >
+                          <div
+                            key={collage}
+                            className="flex space-x-5 pb-5 hover:bg-slate-100 cursor-pointer p-3 rounded-md"
+                          >
+                            <div>
+                              <img
+                                src={`/img/icon-collage-jpg/${collage}.jpg`}
+                                height={70}
+                                width={70}
+                              />
+                            </div>
+                            <div>
+                              <span>{collage}</span>
+                            </div>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+
+
+              </div>
             </div>
           </div>
         </Modal.Body>
