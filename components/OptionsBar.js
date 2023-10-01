@@ -548,7 +548,7 @@ function OptionsBar({
               className="px-3 py-2 rounded-md border shadow-md  text-white font-bold w-48"
               style={{ backgroundColor: "#BF5A1F" }}
             >
-              <option>Nhà phân phối</option>
+              <option>Xưởng làm khung & in tranh</option>
               {countries.map((country) => {
                 return (
                   <optgroup label={country} key={country}>

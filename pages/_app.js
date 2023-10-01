@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
 import { MaterialProvider } from "../utils/materialContext";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
   const salesArray = [
@@ -26,6 +27,25 @@ function MyApp({ Component, pageProps }) {
     setSalesText(salesArray[rand]);
   }, []);
   return (
+    <html lang="en">
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-XK6VDZLG8W"
+      ></Script>
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XK6VDZLG8W', {
+            page_path: window.location.pathname,
+          });
+        `,
+        }}
+      />
     <MaterialProvider>
       <div className="absolute left-10 top-10 z-10">
         <Link href="https://earthcolorsvn.com/collage-art-frames/">
@@ -42,6 +62,7 @@ function MyApp({ Component, pageProps }) {
           <span>CHỨC NĂNG NÀY HOẠT ĐỘNG TỐT HƠN KHI DÙNG TRÊN MÁY TÍNH</span>
         </div>
     </MaterialProvider>
+    </html>
   );
 }
 
