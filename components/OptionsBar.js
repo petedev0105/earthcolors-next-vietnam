@@ -543,16 +543,6 @@ function OptionsBar({
             </select>
           </div>
 
-          <div>
-            <button
-              className="px-4 py-2 rounded-md border shadow-md text-white font-bold"
-              style={{ backgroundColor: "#BF5A1F" }}
-              onClick={() => openFrameMaterialModal()}
-            >
-              Chất liệu khung
-            </button>
-          </div>
-
           <div className="">
             <select
               className="px-3 py-2 rounded-md border shadow-md  text-white font-bold w-48"
@@ -582,7 +572,7 @@ function OptionsBar({
         </div> */}
           <div className="">
             <Link
-              href="https://earthcolorsvn.com/product-images/?k=&c=collage-wallart"
+              href="https://earthcolorsvn.com/product-images/?c=khung-tranh-bo"
               target="_blank"
             >
               <button
