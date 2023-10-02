@@ -46,23 +46,23 @@ function MyApp({ Component, pageProps }) {
         `,
         }}
       />
-    <MaterialProvider>
-      <div className="absolute left-10 top-10 z-10">
-        <Link href="https://earthcolorsvn.com/collage-art-frames/">
-          <button
-            className="px-5 py-2 rounded-md text-white font-bold"
-            style={{ backgroundColor: "#BF5A1F" }}
-          >
-            Home
-          </button>
-        </Link>
-      </div>
-      <Component {...pageProps} />
-      <div className="lg:hidden text-8xl text-center pt-10 w-full">
+      <MaterialProvider>
+        <div className="absolute left-10 top-10 z-10">
+          <Link href="https://earthcolorsvn.com/collage-art-frames/">
+            <button
+              className="px-5 py-2 rounded-md text-white font-bold"
+              style={{ backgroundColor: "#BF5A1F" }}
+            >
+              Home
+            </button>
+          </Link>
+        </div>
+        <Component {...pageProps} />
+        <div className="lg:hidden text-8xl text-center pt-10 w-full">
           <span>CHỨC NĂNG NÀY HOẠT ĐỘNG TỐT HƠN KHI DÙNG TRÊN MÁY TÍNH</span>
         </div>
-    </MaterialProvider>
-     </html>
+      </MaterialProvider>
+    </html>
   );
 }
 

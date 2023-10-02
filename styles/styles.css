@@ -18,6 +18,10 @@
   transition: 0.2s;
 }
 
+.watermark{
+  display: none;
+}
+
 #cropper {
   height: 300px;
   width: 300px;
