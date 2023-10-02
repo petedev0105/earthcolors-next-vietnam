@@ -62,7 +62,7 @@ function MyApp({ Component, pageProps }) {
           <span>CHỨC NĂNG NÀY HOẠT ĐỘNG TỐT HƠN KHI DÙNG TRÊN MÁY TÍNH</span>
         </div>
     </MaterialProvider>
-    </html>
+     </html>
   );
 }
 

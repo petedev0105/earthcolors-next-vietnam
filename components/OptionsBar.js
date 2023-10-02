@@ -5,6 +5,8 @@ import Button from "react-bootstrap/Button";
 import { MaterialContext } from "../utils/materialContext";
 import Link from "next/link";
 import exportAsImage from "../utils/ExportAsImage";
+import Marquee from "react-fast-marquee";
+
 function OptionsBar({
   color,
   setColor,
@@ -58,6 +60,31 @@ function OptionsBar({
   function handleCloseCollageModal() {
     setCollageModal(false);
   }
+
+  const adImages = [
+    "1-768x1024.jpg",
+    "2-768x1024.jpg",
+    "3-768x1024.jpg",
+    "4-768x1024.jpg",
+    "6-768x1024.jpg",
+    "7-768x1024.jpg",
+    "8-768x1024.jpg",
+    "9-768x1024.jpg",
+    "10-768x1024.jpg",
+    "11-768x1024.jpg",
+    "12-768x1024.jpg",
+    "13-768x1024.jpg",
+    "14-768x1024.jpg",
+    "15-768x1024.jpg",
+    "D01-A01-PB001-FL020-768x1152.jpg",
+    "D01-A04-PB004-FL024-2-768x1152.jpg",
+    "D01-A05-T001-PD009_L059-PD009-768x1365.jpg",
+    "D01-A12-T012-PD008_L060-LM003-768x1365.jpg",
+    "D01-A17-T002-PB004_L009-LM003-768x1117.jpg",
+    "D03-A19-T034-PB003_L009-LM002-768x1365.jpg",
+    "D07-A15-PB002-FL022-768x1152.jpg",
+    "D07-A22-PB006-FL021-768x1365.jpg"
+  ];
 
   const wallpapers = [
     "/img/web/Background-1.jpg",
@@ -545,10 +572,12 @@ function OptionsBar({
 
           <div className="">
             <select
-              className="px-3 py-2 rounded-md border shadow-md  text-white font-bold w-48"
+              className="px-3 py-2 rounded-md border shadow-md  text-white font-bold w-48 w-[250px]"
               style={{ backgroundColor: "#BF5A1F" }}
             >
-              <option>Xưởng làm khung <br></br> & in tranh</option>
+              <option>
+                Xưởng làm khung & in tranh
+              </option>
               {countries.map((country) => {
                 return (
                   <optgroup label={country} key={country}>
@@ -607,6 +636,19 @@ function OptionsBar({
             </button>
           </div>
         </div>
+
+        <div>
+          <Marquee className="w-full">
+            {adImages.map((image, index) => (
+              <div key={index} className="pr-3 roudned-sm"><Link href="https://earthcolorsvn.com/product-images/" target="_blank"><img className="rounded-sm" src={`/img/ad/${image}`} height={70} width={70} /></Link></div>
+            ))}
+            
+          </Marquee>
+        </div>
+
+        {/* <div>
+          <span>Design picture frames completely FREE at earthcolorsvn.com and artlyss.com (for artists and photographers) - Wooden lamp gift as pictured worth $100</span>
+        </div> */}
       </div>
 
       <Modal show={show} onHide={handleClose}>
@@ -644,7 +686,9 @@ function OptionsBar({
                   {treecollages.map((collage) => {
                     return (
                       <Link
-                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/tree/${collage}`} target="_blank" key={collage}
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/tree/${collage}`}
+                        target="_blank"
+                        key={collage}
                       >
                         <div
                           key={collage}
@@ -676,7 +720,9 @@ function OptionsBar({
                   {rec3collages.map((collage) => {
                     return (
                       <Link
-                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/3/${collage}`} target="_blank" key={collage}
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/3/${collage}`}
+                        target="_blank"
+                        key={collage}
                       >
                         <div
                           key={collage}
@@ -708,7 +754,9 @@ function OptionsBar({
                   {hec3collages.map((collage) => {
                     return (
                       <Link
-                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/3/${collage}`} target="_blank" key={collage}
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/3/${collage}`}
+                        target="_blank"
+                        key={collage}
                       >
                         <div
                           key={collage}
@@ -739,7 +787,9 @@ function OptionsBar({
                   {rec4collages.map((collage) => {
                     return (
                       <Link
-                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/4/${collage}`} target="_blank" key={collage}
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/4/${collage}`}
+                        target="_blank"
+                        key={collage}
                       >
                         <div
                           key={collage}
@@ -771,7 +821,9 @@ function OptionsBar({
                   {hec4collages.map((collage) => {
                     return (
                       <Link
-                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/4/${collage}`} target="_blank" key={collage}
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/4/${collage}`}
+                        target="_blank"
+                        key={collage}
                       >
                         <div
                           key={collage}
@@ -803,7 +855,9 @@ function OptionsBar({
                   {rec5collages.map((collage) => {
                     return (
                       <Link
-                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/5/${collage}`} target="_blank" key={collage}
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/5/${collage}`}
+                        target="_blank"
+                        key={collage}
                       >
                         <div
                           key={collage}
@@ -834,7 +888,9 @@ function OptionsBar({
                   {hec5collages.map((collage) => {
                     return (
                       <Link
-                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/5/${collage}`} target="_blank" key={collage}
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/5/${collage}`}
+                        target="_blank"
+                        key={collage}
                       >
                         <div
                           key={collage}
@@ -866,7 +922,9 @@ function OptionsBar({
                   {rec6collages.map((collage) => {
                     return (
                       <Link
-                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/6/${collage}`} target="_blank" key={collage}
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/6/${collage}`}
+                        target="_blank"
+                        key={collage}
                       >
                         <div
                           key={collage}
@@ -898,7 +956,9 @@ function OptionsBar({
                   {hec6collages.map((collage) => {
                     return (
                       <Link
-                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/6/${collage}`} target="_blank" key={collage}
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/6/${collage}`}
+                        target="_blank"
+                        key={collage}
                       >
                         <div
                           key={collage}
@@ -930,7 +990,9 @@ function OptionsBar({
                   {rec7collages.map((collage) => {
                     return (
                       <Link
-                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/7/${collage}`} target="_blank" key={collage}
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/7/${collage}`}
+                        target="_blank"
+                        key={collage}
                       >
                         <div
                           key={collage}
@@ -961,7 +1023,8 @@ function OptionsBar({
                   {hec7collages.map((collage) => {
                     return (
                       <Link
-                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/7/${collage}`}  key={collage}
+                        href={`https://frames.earthcolorsvn.com/photo-frame-collage/7/${collage}`}
+                        key={collage}
                         target="_blank"
                       >
                         <div
@@ -993,7 +1056,9 @@ function OptionsBar({
                     {rec8collages.map((collage) => {
                       return (
                         <Link
-                          href={`https://frames.earthcolorsvn.com/photo-frame-collage/8/${collage}`} target="_blank" key={collage}
+                          href={`https://frames.earthcolorsvn.com/photo-frame-collage/8/${collage}`}
+                          target="_blank"
+                          key={collage}
                         >
                           <div
                             key={collage}
@@ -1024,7 +1089,9 @@ function OptionsBar({
                     {hec8collages.map((collage) => {
                       return (
                         <Link
-                          href={`https://frames.earthcolorsvn.com/photo-frame-collage/8/${collage}`} target="_blank" key={collage}
+                          href={`https://frames.earthcolorsvn.com/photo-frame-collage/8/${collage}`}
+                          target="_blank"
+                          key={collage}
                         >
                           <div
                             key={collage}
@@ -1046,7 +1113,7 @@ function OptionsBar({
                     })}
                   </div>
                 </div>
-                
+
                 <div>
                   <div>
                     <span className="font-bold">9-Frame Collages</span>
@@ -1056,7 +1123,8 @@ function OptionsBar({
                     {hec9collages.map((collage) => {
                       return (
                         <Link
-                          href={`https://frames.earthcolorsvn.com/photo-frame-collage/9/${collage}`} key={collage}
+                          href={`https://frames.earthcolorsvn.com/photo-frame-collage/9/${collage}`}
+                          key={collage}
                           target="_blank"
                         >
                           <div
@@ -1079,8 +1147,6 @@ function OptionsBar({
                     })}
                   </div>
                 </div>
-
-
               </div>
             </div>
           </div>

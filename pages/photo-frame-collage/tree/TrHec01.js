@@ -168,7 +168,7 @@ function TrHec01() {
                 />
               </div>
             </Draggable>
-            ;{/* F0026 */}
+            {/* F0026 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="hexComboImage"
@@ -186,7 +186,7 @@ function TrHec01() {
                 />
               </div>
             </Draggable>
-            ;{/* F0026 */}
+            {/* F0026 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="hexComboImage"
@@ -204,7 +204,7 @@ function TrHec01() {
                 />
               </div>
             </Draggable>
-            ;{/* F0026 */}
+            {/* F0026 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="hexComboImage"
@@ -222,7 +222,7 @@ function TrHec01() {
                 />
               </div>
             </Draggable>
-            ;{/* F003 */}
+            {/* F003 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="hexComboImage"
@@ -240,7 +240,7 @@ function TrHec01() {
                 />
               </div>
             </Draggable>
-            ;{/* F003 */}
+            {/* F003 */}
             <Draggable bounds="parent" onDrag={handleDrag}>
               <div
                 className="hexComboImage"
@@ -258,7 +258,7 @@ function TrHec01() {
                 />
               </div>
             </Draggable>
-            ;
+            
           </div>
         </div>
       </div>
