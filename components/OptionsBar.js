@@ -637,14 +637,14 @@ function OptionsBar({
           </div>
         </div>
 
-        <div>
+        {/* <div>
           <Marquee className="w-full">
             {adImages.map((image, index) => (
               <div key={index} className="pr-3 roudned-sm"><Link href="https://earthcolorsvn.com/product-images/" target="_blank"><img className="rounded-sm" src={`/img/ad/${image}`} height={70} width={70} /></Link></div>
             ))}
             
           </Marquee>
-        </div>
+        </div> */}
 
         {/* <div>
           <span>Design picture frames completely FREE at earthcolorsvn.com and artlyss.com (for artists and photographers) - Wooden lamp gift as pictured worth $100</span>
